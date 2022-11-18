@@ -8,5 +8,10 @@ public class RegexMatches {
         Boolean b = m.matches();
 
         System.out.println(b);
+
+        System.out.println(Pattern.matches("[amn]", "acd"));
+        System.out.println(Pattern.matches("[^amn]", "c"));
+        System.out.println(Pattern.matches("[a-zA-S]", "T"));
+        System.out.println(Pattern.matches("[MS][a-z]{5}", "Monica"));
     }
 }
